@@ -31,3 +31,9 @@ app.listen(PORT, function() {
 //   app.get("/api/reservations", function(req, res) {
 //     return res.json(reservations);
 //   });
+
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
