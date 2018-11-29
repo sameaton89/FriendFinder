@@ -72,16 +72,6 @@
         </select>
 
         <h3><strong>Question 6</strong></h3>
-        <h4>There should be a mandatory $15 minimum wage.</h4>
-        <select class="chosen-select" id="q6">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3><strong>Question 6</strong></h3>
         <h4>When the seagulls follow the trawler, it's because they think sardines will be thrown into the sea.</h4>
         <select class="chosen-select" id="q6">
             <option value="1">1 (Strongly Disagree)</option>
@@ -131,10 +121,21 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
 
-
+        <p></p>
+        <p><button type="button" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button></p>
+        
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/sameaton89/friendfinder">GitHub Repo</a></p>
+            </div>
+        </footer>
     </div>
     <script type="text/javascript">
-  $(".chosen-select").chosen()
+        $(".chosen-select").chosen();
+
+        $("#submit").on("click", function(event){
+            event.preventDefault();
+        })
     </script>
 </body>
 </html>
