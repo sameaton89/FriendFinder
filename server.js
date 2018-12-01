@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Sets up body parser to receive data in JSON form
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
  
 // parse application/json
 app.use(bodyParser.json({ type: 'application/**json' }));
