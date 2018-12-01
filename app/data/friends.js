@@ -86,7 +86,7 @@ var friends = [
         },
         {
         name: "Ernst",
-        photo: "https://images.theconversation.com/files/132432/original/image-20160729-12116-1qggcdx.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip",
+        photo: "http://www.jordahlphoto.com/PClightroom02/images/DSCF0755.jpg",
         phoneNumber: "305-423-8885",
         scores: [
         2,
